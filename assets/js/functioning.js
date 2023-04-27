@@ -102,7 +102,7 @@
 
     static authRedirecting() {
       window.setTimeout(() => {
-        window.location.replace('https://mit-canteen.netlify.app/client-side');
+        window.location.replace('https://mandarumare.github.io/canttin/client-side');
       }, 500)
     }
 
@@ -119,7 +119,7 @@
     firebaseAuthRedirect(){
       firebase.auth().onAuthStateChanged(function(user) {
         // If user is registered -
-        user ?  window.location.replace('/client-side') : console.log('none');
+        user ?  window.location.replace('https://mandarumare.github.io/canttin/client-side') : console.log('none');
       });
     }
   }
@@ -230,7 +230,7 @@
             title: 'Logged Out Successfully',
           })
           firebase.auth().signOut().then(() => {
-            window.location.replace("https://mit-canteen.netlify.app/index.html")
+            window.location.replace("https://mandarumare.github.io/canttin/index.html")
           });
         });
       })
